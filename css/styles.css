@@ -581,11 +581,11 @@ h1, h2, h3, ul, p {
     margin-bottom: 16px;
 
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-bg-color)
+    color: #FFFFFF;
 }
 
 .media-list {
@@ -803,6 +803,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 
+   
   
 }
 
@@ -874,6 +875,7 @@ margin-top: 26px;
 }
 
 .checkbox-name {
+    display: flex;
     font-family: inherit;
     font-size: 12px;
     line-height: 1.33;
@@ -881,12 +883,9 @@ margin-top: 26px;
     color: #757575;
    
      margin-top: 16px; 
+    
 }
 
-.form-checkbox {
-    display: block;
-   
-}
 
 
 .checkbox-btn {
@@ -894,7 +893,7 @@ visibility: hidden;
 }
 
 .checkbox-icon {
-    padding: 0;
+    margin-right: 8px;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -912,6 +911,98 @@ visibility: hidden;
 }
 
 
+
 .form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 24px;
+}
+
+.submit-btn {
+    padding: 16px 32px;
+    width: 169px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    
+    border-radius: 4px;
+    border: none;
+    
+    cursor: pointer;
+
+}
+
+/* FORM FOOTER */
+
+
+.form-footer {
+    margin-left: 80px;
+}
+
+
+.footer-input {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.input-size {
+    display: block;
+    padding: 8px 16px;
+    width: 264px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--bg-color-foot-head);
+}
+
+.form-btn {
+    position: relative;
+    display: inline-flex;
+    padding: 8px 24px;
+    width: 165px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+.footer-icon {
+    position: absolute;
+    right: 24px;
+    top: 20%;
+    fill: var(--primary-bg-color);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: #404BBF;
+}
+
+.form-title {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
 }
